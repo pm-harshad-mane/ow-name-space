@@ -11407,7 +11407,8 @@ console.log("The start of OW code execution: ", (new Date()).getTime());
         at.defineGPTVariables(e),
         Q.registerAdapters(),
         at.addHooksIfPossible(e),
-        at.callJsLoadedIfRequired(e),
+        console.log("Calling jsLoaded function: ", (new Date()).getTime()),
+        at.callJsLoadedIfRequired(e),        
         !0) : !1
     }
 }

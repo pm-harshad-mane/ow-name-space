@@ -1,3 +1,4 @@
+console.log("The start of OW code execution: ", (new Date()).getTime());
 function pwtCreatePrebidNamespace(preBidNameSpace) {
     window[preBidNameSpace] = window[preBidNameSpace] || {};
     window[preBidNameSpace].que = window[preBidNameSpace].que || [];
@@ -11871,3 +11872,4 @@ function pwtCreatePrebidNamespace(preBidNameSpace) {
     }
 }
 )]);
+console.log("The end of OW code execution: ", (new Date()).getTime());

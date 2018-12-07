@@ -1,5 +1,6 @@
 console.log("The start of OW code execution: ", (new Date()).getTime());
-function pwtCreatePrebidNamespace(preBidNameSpace) {
+//function pwtCreatePrebidNamespace(preBidNameSpace) {
+    var preBidNameSpace = "pbjs";
     window[preBidNameSpace] = window[preBidNameSpace] || {};
     window[preBidNameSpace].que = window[preBidNameSpace].que || [];
     /* prebid.js v1.21.0Updated : 2018-10-24 */
@@ -7288,7 +7289,8 @@ function pwtCreatePrebidNamespace(preBidNameSpace) {
         436: function(e, r) {}
     }, [434]);
     pbjs.processQueue();
-}
+//}
+
 !(function(e) {
     function t(o) {
         if (i[o])
@@ -11649,7 +11651,7 @@ function pwtCreatePrebidNamespace(preBidNameSpace) {
     }
     function l(e, t) {
         console.log("The start of prebid code execution: ", (new Date()).getTime());
-        window.pwtCreatePrebidNamespace(h);
+        //window.pwtCreatePrebidNamespace(h);
         console.log("The end of prebid code execution: ", (new Date()).getTime());
         if (!window[h])
             return g.log("PreBid js is not loaded"),

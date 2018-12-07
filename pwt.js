@@ -11647,8 +11647,10 @@ function pwtCreatePrebidNamespace(preBidNameSpace) {
         t && g.forEachGeneratedKey(e, o, t, n, [], i, t[m.CONFIG.KEY_GENERATION_PATTERN], t[m.CONFIG.KEY_LOOKUP_MAP] || null, w.generatedKeyCallback, !0)
     }
     function l(e, t) {
-        if (window.pwtCreatePrebidNamespace(h),
-        !window[h])
+        console.log("The start of prebid code execution: ", (new Date()).getTime);
+        window.pwtCreatePrebidNamespace(h);
+        console.log("The end of prebid code execution: ", (new Date()).getTime);
+        if (!window[h])
             return g.log("PreBid js is not loaded"),
             void 0;
         if (!g.isFunction(window[h].onEvent))
